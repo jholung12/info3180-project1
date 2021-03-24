@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<h1 class="page-header">Properties</h1>
+
+{% include 'flash_messages.html' %}
+
+<div class="profile-container">
+{% for profile in profiles %}
+    <div class="image">
+        <img src="{{ url_for('get_property', filename=profile[8]) }}" />
+        <h6>{{ profile[1] }}</h6>
+        <h6>{{ profile[4] }}</h6>
+        <div class=round><p>${{ profile[5] }}</p></div><br>
+        
+        <form action="{{ url_for('property_id', propertyid=profile[0]) }}">
+            <input type="submit" value="View Property"/>
+        </form>
+    </div>
+{% endfor %}
+</div>
+
+{% endblock %}

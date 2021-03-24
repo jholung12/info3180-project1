@@ -1,3 +1,49 @@
 body {
     padding-top: 50px;
 }
+
+img {
+    height: 150px;
+    width: 150px;
+}
+
+.form-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.profile-container {
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.property-container {
+    display: grid;
+    align-content: center;
+    grid-template-columns: 150px 50%;
+    grid-gap: 100px;
+
+    background-color: lightgray;
+    padding-left: 150px;
+}
+
+.round {
+    border-radius: 100%;
+    background-color:deepskyblue;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    color: white;
+}
+
+.desc-sub {
+    display: grid;
+    align-content: center;
+    grid-template-columns: 100px 100px;
+    grid-gap: 10px;
+}
+
+#id {
+    background-color: orange;
+}
